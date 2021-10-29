@@ -78,48 +78,48 @@ $(document).ready(function() {
 
     if (beepBoop(input) === "error") {
       $("#too-high").show();
-      $("#confused-robot").show();
+      $("#confused-robot").fadeIn();
     } else if (beepBoop(input) === "...boop?") {
       $("#too-low").show();
-      $("#confused-robot").show();
+      $("#confused-robot").fadeIn();
     } else if (angryBeepBoop(input) === "normal") {
       if (input < 80) {
         $("#pleasant").show();
-        $("#normal-robot").show();
+        $("#normal-robot").fadeIn();
       } else if (input < 200) {
         $("#opinion").show();
-        $("#normal-robot").show();
+        $("#normal-robot").fadeIn();
       } else if (input < 350) {
         $("#animals").show();
-        $("#happy-robot").show();
+        $("#happy-robot").fadeIn();
       } else if (input < 500) {
         $("#kind").show();
-        $("#happy-robot").show();
+        $("#happy-robot").fadeIn();
       } else if (input < 600) {
         $("#weather").show();
-        $("#normal-robot").show();
+        $("#normal-robot").fadeIn();
       } else if (input < 700) {
         $("#show").show();
-        $("#normal-robot").show();
+        $("#normal-robot").fadeIn();
       } else if (input < 800) {
         $("#friend").show();
-        $("#happy-robot").show();
+        $("#happy-robot").fadeIn();
       } else {
         $("#compliment").show();
-        $("#happy-robot").show();
+        $("#happy-robot").fadeIn();
       }
     } else if (angryBeepBoop(input) === "angry") {
       $("#angry").show();
-      $("#angry-robot").show();
+      $("#angry-robot").fadeIn();
     } else if (angryBeepBoop(input) === "very-angry") {
       $("#very-angry").show();
-      $("#angry-robot").show();
+      $("#angry-robot").fadeIn();
     } else if (angryBeepBoop(input) === "forgive") {
       $("#forgive").show();
-      $("#normal-robot").show();
+      $("#normal-robot").fadeIn();
     }  else {
       $("#no-response").show();
-      $("#angry-robot").show();
+      $("#angry-robot").fadeIn();
     }
 
     if (angryBeepBoop(input) !== "no-response") {
