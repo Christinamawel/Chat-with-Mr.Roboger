@@ -51,7 +51,7 @@ function angryBeepBoop(input) {
 }
 
 function lastInputChanger(output, input) {
-  if (input !== 69 && output === "no-response" || input !== 666 && output === "no-response" || input !== 420 && output === "no-response") {
+  if ((input !== 69 && input !== 666 && input !== 420) && output === "no-response") {
     lastInput = "strikeOne"
   } else if (output === "normal" || output === "forgive") {
     lastInput = ""
@@ -94,7 +94,10 @@ $(document).ready(function() {
     } else if (angryBeepBoop(input) === "very-angry") {
       $("#very-angry").show();
       $("#angry-robot").show();
-    } else {
+    } else if (angryBeepBoop(input) === "forgive") {
+      $("#forgive").show();
+      $("#normal-robot").show();
+    }  else {
       $("#no-response").show();
       $("#angry-robot").show();
     }
