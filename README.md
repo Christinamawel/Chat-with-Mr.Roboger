@@ -1,17 +1,21 @@
-# _My Portfolio_
+# _Chat with Mr.Roboger_
+#### _A webpage with a chatty little robot_
+
+![robot illustration](img/Robot-normal.png)
 
 #### By _**Christina Welch**_
-
-#### _A protfolio page to showcase my work_
+#### Robot Art By _**Joezhuang at vecteezy.com**_
 
 ## Technologies Used
 
 * _HTML_
 * _CSS_
+* _JavaScript_
+* _JQuery_
 
 ## Description
 
-Welcome to my portfolio webpage, a simple webpage to introduce myself and my work. Within the page will be links to my work as well as contact info.
+Welcome! this little webpage features a simple lonely little robot who would like to be your friend. please type in some numbers into the input field and listen to what he has to say!
 
 Thankyou!
 
