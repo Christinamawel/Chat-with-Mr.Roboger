@@ -10,7 +10,7 @@
   <script src="js/scripts.js"></script>
   <title>Chat with Mr.Roboger</title>
 </head>
-<body>
+<body id="back-to-top">
   <div class="container">
     <h1>Meet Mr.Roboger!</h1>
     <img class="robot" id="normal-robot" src="img/Robot-normal.png" alt="illustration of a robot">
@@ -20,21 +20,25 @@
     <h4>Please type in a number between 0 and 1000</h4>
     <form id="number-form">
       <input id="number-input" type="number"></input>
-      <button type="submit">Talk</button>
+      <button type="submit"><a href="#to-responses">Talk</a></button>
     </form>
     <div id="output-container">
       <h4>Mr.Roboger:</h4>
       <p id="output"></p>
-      <h3 class="response" id="pleasant">Mr.Roboger is enjoying the pleasant conversation!</h3>
-      <h3 class="response" id="kind">Mr.Roboger says that you should believe in yourself!</h3>
-      <h3 class="response" id="compliment">Mr.Roboger appreciates the compliment and says "no you are!"</h3>
-      <h3 class="response" id="opinion">Mr.Roboger is agreeing to disagree about your political opinion</h3>
-      <h3 class="response" id="show">Mr.Roboger Loves that show too but disagrees with you about the ending</h3>
-      <h3 class="response" id="angry">Mr.Roboger was offended by that! You should probably apologize.</h3>
-      <h3 class="response" id="very-angry">Mr.Roboger is not sure he wants to speak to you</h3>
-      <h3 class="response" id="forgive">Mr.Roboger feels that was a good apology and has decided to forgive you</h3>
-      <h3 class="response" id="no-response">...</h3>
+      <div id="responses">
+        <h3 class="response" id="pleasant">Mr.Roboger is enjoying the pleasant conversation!</h3>
+        <h3 class="response" id="kind">Mr.Roboger says that you should believe in yourself!</h3>
+        <h3 class="response" id="compliment">Mr.Roboger appreciates the compliment and says "no you are!"</h3>
+        <h3 class="response" id="opinion">Mr.Roboger is agreeing to disagree about your political opinion</h3>
+        <h3 class="response" id="show">Mr.Roboger Loves that show too but disagrees with you about the ending</h3>
+        <h3 class="response" id="angry">Mr.Roboger was offended by that! You should probably apologize.</h3>
+        <h3 class="response" id="very-angry">Mr.Roboger is not sure he wants to speak to you</h3>
+        <h3 class="response" id="forgive">Mr.Roboger feels that was a good apology and has decided to forgive you</h3>
+        <h3 class="response" id="no-response">...</h3>
+      </div>
+      <a id="to-top" href="#back-to-top">Back to top</a>
     </div>
+    <div id="to-responses"></div>
   </div>
 </body>
 </html>

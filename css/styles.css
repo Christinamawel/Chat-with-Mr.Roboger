@@ -30,17 +30,19 @@ h4 {
 }
 
 #number-input {
+  display: block;
+  margin: .5em auto;
   width: 8em;
   border-radius: .5em;
   border-color: rgb(31,53,102);
 }
 
 button {
-  border: none;
+  border:none;
   border-radius: .5em;
   padding: .5em;
+  margin: .5em;
   width: 5em;
-  color: white;
   background-color: rgb(31,53,102);
 }
 
@@ -49,7 +51,15 @@ button:hover {
   width: 7em;
 }
 
+a {
+  color: white;
+  border: none;
+}
 
+a:hover {
+  color:white;
+  text-decoration: none;
+}
 
 #output-container {
   display: none;
@@ -73,8 +83,24 @@ h3 {
   font-weight: bold;
 }
 
+#to-top {
+  text-decoration: none;
+  background-color: rgb(31,53,102);
+  padding: .5em;
+  width: 70%;
+  margin: 1em auto;
+  display: block;
+  border-radius: .5em;
+}
+
+#to-top:hover {
+  width: 80%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 @media (min-width: 1200px) {
 img {
-  max-width: 50em;
+  max-width: 45em;
 }
 }
