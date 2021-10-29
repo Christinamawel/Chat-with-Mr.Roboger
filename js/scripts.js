@@ -33,11 +33,30 @@ console.log(BeepBoop(1001));
 $(document).ready(function() {
   $("form#number-form").submit(function(event){
     event.preventDefault();
+    $(".response").hide();
+    $(".robot").hide();
     const input = $("#number-input").val();
-    if (input > 100) {
-      $("#normal-robot").hide();
+
+    if (input == 69 || input == 666 || input == 420) {
+      $("#angry").show();
+      $("#angry-robot").show();
+    } else if (input < 80) {
+      $("#pleasant").show();
+      $("#normal-robot").show();
+    } else if (input < 200) {
+      $("#opinion").show();
+      $("#normal-robot").show();
+    } else if (input < 500) {
+      $("#kind").show();
+      $("#happy-robot").show();
+    } else if (input < 700) {
+      $("#show").show();
+      $("#normal-robot").show();
+    } else {
+      $("#compliment").show();
       $("#happy-robot").show();
     }
+
     $("#output").text(BeepBoop(input));
     $("#output-container").show();
     $("#intro").hide();
