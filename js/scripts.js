@@ -72,6 +72,7 @@ $(document).ready(function() {
     event.preventDefault();
     $(".response").hide();
     $(".robot").hide();
+    $(".page-jump").hide();
     const input = parseInt($("#number-input").val());
 
     if (beepBoop(input) === "error") {
@@ -125,6 +126,9 @@ $(document).ready(function() {
     }
     $("#output-container").show();
     $("#intro").hide();
+    if (input >= 200 && input <= 1000) {
+      $(".page-jump").show();
+    }
     lastInputChanger(angryBeepBoop(input), input);
   })
 })

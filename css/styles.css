@@ -38,6 +38,7 @@ h4 {
 }
 
 button {
+  color: white;
   border:none;
   border-radius: .5em;
   padding: .5em;
@@ -49,16 +50,6 @@ button {
 button:hover {
   font-weight: bold;
   width: 7em;
-}
-
-a {
-  color: white;
-  border: none;
-}
-
-a:hover {
-  color:white;
-  text-decoration: none;
 }
 
 #output-container {
@@ -87,7 +78,9 @@ h3 {
   font-weight: bold;
 }
 
-#to-top {
+a {
+  color: white;
+  border: none;
   text-decoration: none;
   background-color: rgb(31,53,102);
   padding: .5em;
@@ -95,9 +88,12 @@ h3 {
   margin: 1em auto;
   display: block;
   border-radius: .5em;
+  color:white;
+  text-decoration: none;
 }
 
-#to-top:hover {
+a:hover {
+  color: white;
   width: 80%;
   text-decoration: none;
   font-weight: bold;
