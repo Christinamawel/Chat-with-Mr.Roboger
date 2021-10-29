@@ -1,3 +1,5 @@
+//business Logic
+
 function BeepBoop(number) {
   let numberArray = [];
   const oneRegex = new RegExp("1");
@@ -26,3 +28,5 @@ function BeepBoop(number) {
 }
 
 console.log(BeepBoop(1001));
+
+//UI Logic
