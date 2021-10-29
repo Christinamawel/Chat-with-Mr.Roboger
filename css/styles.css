@@ -19,6 +19,27 @@ h1 {
   font-weight: bold;
 }
 
+#arrow-div {
+  width: 8em;
+  height: 8em;
+  margin: 0 auto;
+  display: block;
+}
+
+#arrow {
+  width: 5em;
+  animation: moveUpDown 1.5s linear infinite; 
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 2em;
+  }
+}
+
 h2 {
   padding-bottom: .5em;
   color: rgb(31,53,102);
@@ -58,6 +79,7 @@ button:hover {
 
 img {
   width: 100%;
+  margin-bottom: 1em;
 }
 
 #happy-robot {

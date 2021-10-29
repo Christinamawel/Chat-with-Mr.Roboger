@@ -73,6 +73,7 @@ $(document).ready(function() {
     $(".response").hide();
     $(".robot").hide();
     $(".page-jump").hide();
+    $("#arrow-div").hide();
     const input = parseInt($("#number-input").val());
 
     if (beepBoop(input) === "error") {
