@@ -34,7 +34,12 @@ $(document).ready(function() {
   $("form#number-form").submit(function(event){
     event.preventDefault();
     const input = $("#number-input").val();
+    if (input > 100) {
+      $("#normal-robot").hide();
+      $("#happy-robot").show();
+    }
     $("#output").text(BeepBoop(input));
     $("#output-container").show();
+    $("#intro").hide();
   })
 })

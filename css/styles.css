@@ -1,3 +1,23 @@
+body {
+  text-align: center;
+}
+
 #output-container {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+#happy-robot {
+  display: none;
+}
+
+#angry-robot {
+  display: none;
+}
+
+h3 {
   display: none;
 }
