@@ -21,13 +21,13 @@ Thankyou!
 
 ## Setup/Installation Requirements
 
+You can view this page here https://christinamawel.github.io/Chat-with-Mr.Roboger/
+
 * _Clone this repository to your desktop_
 * _Navigate to the top level of the directory_
 * _open Portfolio/index.html_
 
 _if you are unsure how to clone repositorys from github see https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository_
-
-_Because this is just a simple webpage you can also just look at it by simply clicking the github-pages link under Enviorments on the right and then clicking view deployment on the right._
 
 ## Tests
 
