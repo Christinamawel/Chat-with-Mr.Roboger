@@ -30,3 +30,11 @@ function BeepBoop(number) {
 console.log(BeepBoop(1001));
 
 //UI Logic
+$(document).ready(function() {
+  $("form#number-form").submit(function(event){
+    event.preventDefault();
+    const input = $("#number-input").val();
+    $("#output").text(BeepBoop(input));
+    $("#output-container").show();
+  })
+})
