@@ -1,14 +1,17 @@
 //business Logic
+
 let lastInput = "";
 
-function BeepBoop(number) {
+function beepBoop(number) {
   let numberArray = [];
   const oneRegex = new RegExp("1");
   const twoRegex = new RegExp("2");
   const threeRegex = new RegExp("3");
 
   if (number > 1000) {
-    return "Mr. Roboger can't count that high. please type in a smaller number."
+    return "error"
+  } else if (number < 0){
+    return "...boop?"
   }
 
   for (i = 0; i <= number; i++) {
@@ -63,6 +66,7 @@ function lastInputChanger(output, input) {
 }
 
 //UI Logic
+
 $(document).ready(function() {
   $("form#number-form").submit(function(event){
     event.preventDefault();
@@ -70,7 +74,13 @@ $(document).ready(function() {
     $(".robot").hide();
     const input = parseInt($("#number-input").val());
 
-    if (angryBeepBoop(input) === "normal") {
+    if (beepBoop(input) === "error") {
+      $("#too-high").show();
+      $("#confused-robot").show();
+    } else if (beepBoop(input) === "...boop?") {
+      $("#too-low").show();
+      $("#confused-robot").show();
+    } else if (angryBeepBoop(input) === "normal") {
       if (input < 80) {
         $("#pleasant").show();
         $("#normal-robot").show();
@@ -87,7 +97,6 @@ $(document).ready(function() {
         $("#compliment").show();
         $("#happy-robot").show();
       }
-      console.log("ran normal")
     } else if (angryBeepBoop(input) === "angry") {
       $("#angry").show();
       $("#angry-robot").show();
@@ -103,7 +112,7 @@ $(document).ready(function() {
     }
 
     if (angryBeepBoop(input) !== "no-response") {
-    $("#output").text(BeepBoop(input));
+    $("#output").text(beepBoop(input));
     }
     $("#output-container").show();
     $("#intro").hide();

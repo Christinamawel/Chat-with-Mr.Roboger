@@ -77,6 +77,10 @@ img {
   display: none;
 }
 
+#confused-robot {
+  display: none;
+}
+
 h3 {
   display: none;
   color: rgb(31,53,102);

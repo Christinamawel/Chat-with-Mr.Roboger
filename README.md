@@ -47,7 +47,11 @@ Expected Output: "0, Beep!, Boop, wont you be my neighbor?, 4, 5"
 
 Test: "It should not allow the user to type a number greater than 1000"
 code: beepBoop(1001);
-Expected Output: "Mr. Roboger can't count that high. please type in a smaller number."
+Expected Output: "error"
+
+Test: "It should not allow the user to type a number less than 0"
+code: beepBoop(-5)
+Expected Output "...boop?"
 
 Test: "It should return all numbers counted down with the number containing one 1's changed to "Beep!""
 code: beepBoop(10);
