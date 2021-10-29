@@ -87,12 +87,21 @@ $(document).ready(function() {
       } else if (input < 200) {
         $("#opinion").show();
         $("#normal-robot").show();
+      } else if (input < 350) {
+        $("#animals").show();
+        $("#happy-robot").show();
       } else if (input < 500) {
         $("#kind").show();
         $("#happy-robot").show();
+      } else if (input < 600) {
+        $("#weather").show();
+        $("#normal-robot").show();
       } else if (input < 700) {
         $("#show").show();
         $("#normal-robot").show();
+      } else if (input < 800) {
+        $("#friend").show();
+        $("#happy-robot").show();
       } else {
         $("#compliment").show();
         $("#happy-robot").show();
